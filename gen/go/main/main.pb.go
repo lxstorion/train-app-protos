@@ -231,7 +231,7 @@ const file_main_main_proto_rawDesc = "" +
 	"\rhealth_status\x18\x02 \x01(\tR\fhealthStatus2\x87\x01\n" +
 	"\fOrderService\x129\n" +
 	"\bGetOrder\x12\x15.main.GetOrderRequest\x1a\x16.main.GetOrderResponse\x12<\n" +
-	"\x0fGetHealthStatus\x12\x13.main.HealthRequest\x1a\x14.main.HealthResponseB%Z#github.com/lxstorion/train-app;mainb\x06proto3"
+	"\x0fGetHealthStatus\x12\x13.main.HealthRequest\x1a\x14.main.HealthResponseB,Z*github.com/lxstorion/train-app-protos;mainb\x06proto3"
 
 var (
 	file_main_main_proto_rawDescOnce sync.Once

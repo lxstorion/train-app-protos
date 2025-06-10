@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package main;
 
-option go_package = "github.com/lxstorion/train-app;main";
+option go_package = "github.com/lxstorion/train-app-protos;main";
 
 // service section
 service OrderService {
