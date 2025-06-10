@@ -4,7 +4,7 @@
 // - protoc             v6.31.1
 // source: main/main.proto
 
-package main
+package order
 
 import (
 	context "context"
@@ -19,8 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	OrderService_GetOrder_FullMethodName        = "/main.OrderService/GetOrder"
-	OrderService_GetHealthStatus_FullMethodName = "/main.OrderService/GetHealthStatus"
+	OrderService_GetOrder_FullMethodName        = "/order.OrderService/GetOrder"
+	OrderService_GetHealthStatus_FullMethodName = "/order.OrderService/GetHealthStatus"
 )
 
 // OrderServiceClient is the client API for OrderService service.
@@ -146,7 +146,7 @@ func _OrderService_GetHealthStatus_Handler(srv interface{}, ctx context.Context,
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var OrderService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "main.OrderService",
+	ServiceName: "order.OrderService",
 	HandlerType: (*OrderServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

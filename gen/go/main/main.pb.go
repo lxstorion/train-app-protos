@@ -4,7 +4,7 @@
 // 	protoc        v6.31.1
 // source: main/main.proto
 
-package main
+package order
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -218,7 +218,7 @@ var File_main_main_proto protoreflect.FileDescriptor
 
 const file_main_main_proto_rawDesc = "" +
 	"\n" +
-	"\x0fmain/main.proto\x12\x04main\",\n" +
+	"\x0fmain/main.proto\x12\x05order\",\n" +
 	"\x0fGetOrderRequest\x12\x19\n" +
 	"\border_id\x18\x01 \x01(\x03R\aorderId\"d\n" +
 	"\x10GetOrderResponse\x12\x19\n" +
@@ -228,10 +228,10 @@ const file_main_main_proto_rawDesc = "" +
 	"\rHealthRequest\"I\n" +
 	"\x0eHealthResponse\x12\x12\n" +
 	"\x04date\x18\x01 \x01(\tR\x04date\x12#\n" +
-	"\rhealth_status\x18\x02 \x01(\tR\fhealthStatus2\x87\x01\n" +
-	"\fOrderService\x129\n" +
-	"\bGetOrder\x12\x15.main.GetOrderRequest\x1a\x16.main.GetOrderResponse\x12<\n" +
-	"\x0fGetHealthStatus\x12\x13.main.HealthRequest\x1a\x14.main.HealthResponseB,Z*github.com/lxstorion/train-app-protos;mainb\x06proto3"
+	"\rhealth_status\x18\x02 \x01(\tR\fhealthStatus2\x8b\x01\n" +
+	"\fOrderService\x12;\n" +
+	"\bGetOrder\x12\x16.order.GetOrderRequest\x1a\x17.order.GetOrderResponse\x12>\n" +
+	"\x0fGetHealthStatus\x12\x14.order.HealthRequest\x1a\x15.order.HealthResponseB-Z+github.com/lxstorion/train-app-protos;orderb\x06proto3"
 
 var (
 	file_main_main_proto_rawDescOnce sync.Once
@@ -247,16 +247,16 @@ func file_main_main_proto_rawDescGZIP() []byte {
 
 var file_main_main_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
 var file_main_main_proto_goTypes = []any{
-	(*GetOrderRequest)(nil),  // 0: main.GetOrderRequest
-	(*GetOrderResponse)(nil), // 1: main.GetOrderResponse
-	(*HealthRequest)(nil),    // 2: main.HealthRequest
-	(*HealthResponse)(nil),   // 3: main.HealthResponse
+	(*GetOrderRequest)(nil),  // 0: order.GetOrderRequest
+	(*GetOrderResponse)(nil), // 1: order.GetOrderResponse
+	(*HealthRequest)(nil),    // 2: order.HealthRequest
+	(*HealthResponse)(nil),   // 3: order.HealthResponse
 }
 var file_main_main_proto_depIdxs = []int32{
-	0, // 0: main.OrderService.GetOrder:input_type -> main.GetOrderRequest
-	2, // 1: main.OrderService.GetHealthStatus:input_type -> main.HealthRequest
-	1, // 2: main.OrderService.GetOrder:output_type -> main.GetOrderResponse
-	3, // 3: main.OrderService.GetHealthStatus:output_type -> main.HealthResponse
+	0, // 0: order.OrderService.GetOrder:input_type -> order.GetOrderRequest
+	2, // 1: order.OrderService.GetHealthStatus:input_type -> order.HealthRequest
+	1, // 2: order.OrderService.GetOrder:output_type -> order.GetOrderResponse
+	3, // 3: order.OrderService.GetHealthStatus:output_type -> order.HealthResponse
 	2, // [2:4] is the sub-list for method output_type
 	0, // [0:2] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
