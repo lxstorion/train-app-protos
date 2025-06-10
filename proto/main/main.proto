@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package main;
+
+option go_package = "github.com/lxstorion/train-app;main";
+
+// service section
+service OrderService {
+    rpc GetOrder (GetOrderRequest) returns (GetOrderResponse);
+    rpc GetHealthStatus (HealthRequest) returns (HealthResponse);
+}
+
+// gRPC protobuf objects section 
+message GetOrderRequest {
+    int64 order_id = 1;
+}
+message GetOrderResponse {
+    int64 order_id = 1;
+    string date = 2;
+    float total_amount = 3;
+}
+message HealthRequest {
+
+}
+message HealthResponse {
+    string date = 1;
+    string health_status = 2;
+}
